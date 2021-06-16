@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script src="classes\keycode.js"></script>
+    <script>
+        //event handler for the load event
+        window.onload = function () {
+            ///function to handle keyboard events
+            function KeyboardEventHandler(event) {
+                //if the up arrow is pressed
+                if (event.keyCode == keycode.UP) {
+                    //activate the thrusters
+                    console.log("Activate thrust");
+                }
+                if (event.keyCode == keycode.LEFT) {
+                    //go left
+                    console.log("Go left");
+                }
+                if (event.keyCode == keycode.RIGHT) {
+                    //go right
+                    console.log("Go right");
+                }
+                if (event.keyCode == keycode.DOWN) {
+                    //kill engines
+                    console.log("Stop thrust");
+                }
+            }
+
+    </script>
+
+
+</body>
+</html>
